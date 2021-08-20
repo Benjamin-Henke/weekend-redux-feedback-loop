@@ -18,3 +18,13 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] comments
     [x] review page
 
+[] navigation
+    [x] import 5 components
+    [] set up nav on app.jsx
+    [] <Route> tags for each page
+
+[] feeling form
+    [] number input field
+    [] NEXT button
+        [] send info to reducer
+        [] send user to next page (understanding content)
