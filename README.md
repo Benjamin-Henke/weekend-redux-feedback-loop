@@ -11,8 +11,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 # To Do List
 [x] install packages
 [x] create database
-[] create 4 components (pages)
-    [] feeling
-    [] understanding content
-    [] supported
-    [] comments
+[x] create 5 components
+    [x] feeling
+    [x] understanding content
+    [x] supported
+    [x] comments
+    [x] review page
+
