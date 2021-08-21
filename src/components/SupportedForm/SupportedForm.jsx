@@ -1,25 +1,25 @@
 import { useHistory } from 'react-router-dom';
 
-function ContentForm() {
+function SupportedForm() {
     // Sets useHistory to a variable
     const history = useHistory();
 
     // Handles click 
     const onClick = () => {
-        // Sends user to Supported Form component
-        history.push('/supportedform')
+        // Sends user to Comment Form component
+        history.push('/commentform')
     } // end on click
     return (
-        <div id="pageThree">
-            <h1>How well are you understanding the content?</h1>
+        <div id="pageFour">
+            <h1>How well are you being supported?</h1>
             <input
                 type="number"
-     
+
             />
             <br></br>
             <button className="pageBtn" onClick={onClick}>NEXT</button>
         </div>
     )
-} // end ContentForm
+} // end SupportedForm
 
-export default ContentForm;
+export default SupportedForm;
