@@ -10,8 +10,8 @@ function ContentForm() {
         history.push('/supportedform')
     } // end on click
     return (
-        <div id="pageOne">
-            <h1>How well do you feel supported?</h1>
+        <div id="pageThree">
+            <h1>How well are you understanding the content?</h1>
             <input
                 type="number"
      
@@ -20,6 +20,6 @@ function ContentForm() {
             <button className="pageBtn" onClick={onClick}>NEXT</button>
         </div>
     )
-} // end HomePage
+} // end ContentForm
 
 export default ContentForm;

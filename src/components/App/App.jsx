@@ -24,7 +24,7 @@ function App() {
         <Route path="/home" component={HomePage}></Route>
         <Route path="/feelingform" component={FeelingForm}></Route>
         <Route path="/contentform" component={ContentForm}></Route>
-        <Route path="/supportform" component={SupportedForm}></Route>
+        <Route path="/supportedform" component={SupportedForm}></Route>
         <Route path="/commentform" component={CommentForm}></Route>
         <Route path="/review" component={Review}></Route>
       </Router>

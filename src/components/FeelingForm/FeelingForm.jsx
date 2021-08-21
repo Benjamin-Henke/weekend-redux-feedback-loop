@@ -10,7 +10,7 @@ function FeelingForm() {
         history.push('/contentform')
     } // end on click
     return (
-        <div id="pageOne">
+        <div id="pageTwo">
             <h1>How are you feeling today?</h1>
             <input
             type = "number"
@@ -19,6 +19,6 @@ function FeelingForm() {
             <button className="pageBtn" onClick={onClick}>NEXT</button>
         </div>
     )
-} // end HomePage
+} // end FeelingForm
 
 export default FeelingForm;
