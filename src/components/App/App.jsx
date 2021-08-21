@@ -18,6 +18,14 @@ function App() {
         <h1 className='App-title'>Feedback!</h1>
         <h4>Don't forget it!</h4>
       </header>
+
+      <Router>
+        <Route path="/feelingform" component={FeelingForm}></Route>
+        <Route path="/contentform" component={ContentForm}></Route>
+        <Route path="/supportform" component={SupportedForm}></Route>
+        <Route path="/commentform" component={CommentForm}></Route>
+        <Route path="/review" component={Review}></Route>
+      </Router>
     </div>
   );
 }
