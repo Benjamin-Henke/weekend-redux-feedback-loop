@@ -11,17 +11,18 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 # To Do List
 [x] install packages
 [x] create database
-[x] create 5 components
+[x] create 6 components
+    [x] home page
     [x] feeling
     [x] understanding content
     [x] supported
     [x] comments
     [x] review page
 
-[] navigation
-    [x] import 5 components
-    [] set up nav on app.jsx
-    [] <Route> tags for each page
+[x] navigation
+    [x] import 6 components
+    [x] set up nav on app.jsx
+    [x] <Route> tags for each page
 
 [] feeling form
     [] number input field

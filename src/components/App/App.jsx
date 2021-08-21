@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // Import components
+import HomePage from '../HomePage/HomePage'
 import FeelingForm from '../FeelingForm/FeelingForm';
 import ContentForm from '../ContentForm/ContentForm';
 import SupportedForm from '../SupportedForm/SupportedForm';
@@ -20,6 +21,7 @@ function App() {
       </header>
 
       <Router>
+        <Route path="/home" component={HomePage}></Route>
         <Route path="/feelingform" component={FeelingForm}></Route>
         <Route path="/contentform" component={ContentForm}></Route>
         <Route path="/supportform" component={SupportedForm}></Route>
