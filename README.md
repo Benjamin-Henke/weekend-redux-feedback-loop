@@ -23,10 +23,16 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] import 6 components
     [x] set up nav on app.jsx
     [x] <Route> tags for each page
-    [] set up next buttons
+    [x] set up next buttons
+
+[x] index.js
+    [x] create store
+    [x] create reducers
+    [x] import logger
+
+[] home page
+    [] instructions
 
 [] feeling form
     [] number input field
-    [] NEXT button
-        [] send info to reducer
-        [] send user to next page (understanding content)
+    [] dispatch to reducer
