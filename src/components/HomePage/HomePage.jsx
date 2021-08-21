@@ -11,7 +11,10 @@ function HomePage () {
     } // end on click
     return (
         <div id="pageOne">
-            <h1>Click START to begin the survey.</h1>
+            <h2>Please use 1 through 5 to describe your feedback.</h2>
+            <h2>1 feeling less strongly, 5 feeling most strongly.</h2>
+            <br></br>
+            <h3>Click START to begin the survey.</h3>
             <button className="pageBtn" onClick={onClick}>START</button>
         </div>
     )

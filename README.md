@@ -30,8 +30,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] create reducers
     [x] import logger
 
-[] home page
-    [] instructions
+[x] home page
+    [x] instructions
 
 [] feeling form
     [] number input field
