@@ -33,8 +33,13 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] home page
     [x] instructions
 
-[x] feeling form
+[x] forms 
     [x] number input field
     [x] add state variable
     [x] handle input change from user
     [x] dispatch to reducer
+    [x] input validation
+
+[] review
+    [x] bring in reducers
+    [x] display data

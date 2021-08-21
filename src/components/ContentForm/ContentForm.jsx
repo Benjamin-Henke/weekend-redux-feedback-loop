@@ -17,10 +17,14 @@ function ContentForm() {
 
     // Handles click 
     const onClick = () => {
+        if (isNaN(content) || content < 1 || content > 5) {
+            alert("Input not valid");
+            return;
+        }
         dispatch({
             type: "ADD_CONTENT",
             payload: content
-        })
+        });
 
         // Sends user to Supported Form component
         history.push('/supportedform')

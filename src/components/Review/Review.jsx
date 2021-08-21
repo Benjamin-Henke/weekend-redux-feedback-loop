@@ -9,7 +9,9 @@ function ReviewForm() {
 
     // Grab data from the store
     const feelingForm = useSelector(store => store.feelingReducer);
-    const contentForm = useSelector(store => store.contentReducer)
+    const contentForm = useSelector(store => store.contentReducer);
+    const supportForm = useSelector(store => store.supportReducer);
+    const commentForm = useSelector(store => store.commentReducer);
 
     // Handles click 
     const onClick = () => {
@@ -26,8 +28,8 @@ function ReviewForm() {
             <h1>Review Your Feedback</h1>
             <p>Feelings: {feelingForm}</p>
             <p>Understanding: {contentForm}</p>
-            <p>Support:</p>
-            <p>Comments:</p>
+            <p>Support: {supportForm}</p>
+            <p>Comments: {commentForm}</p>
 
 
             <br></br>

@@ -17,6 +17,10 @@ function FeelingForm() {
 
     // Handles click 
     const onClick = () => {
+        if (isNaN(feeling) || feeling < 1 || feeling > 5) {
+            alert("Input not valid");
+            return
+        }
         dispatch({
             type: "ADD_FEELING",
             payload: feeling
