@@ -22,7 +22,7 @@ const commentReducer = (state = [], action) => {
 const contentReducer = (state = [], action) => {
     switch (action.type) {
         case "ADD_CONTENT":
-            return state;
+            return [...state, action.payload]
         default:
             return state;
     }

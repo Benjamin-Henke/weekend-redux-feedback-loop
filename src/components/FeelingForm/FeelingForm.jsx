@@ -29,9 +29,9 @@ function FeelingForm() {
         <div id="pageTwo">
             <h1>How are you feeling today?</h1>
             <input
-            type = "number"
-            value={feeling}
-            onChange={handleInputChange}
+                type = "number"
+                value={feeling}
+                onChange={handleInputChange}
             />
             <br></br>
             <button className="pageBtn" onClick={onClick}>NEXT</button>
