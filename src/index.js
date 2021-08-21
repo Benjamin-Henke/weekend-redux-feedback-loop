@@ -11,7 +11,7 @@ import logger from 'redux-logger';
 
 // Reducers
 const commentReducer = (state = [], action) => {
-    switch (action) {
+    switch (action.type) {
         case "ADD_COMMENT":
             return state;
         default:
@@ -20,7 +20,7 @@ const commentReducer = (state = [], action) => {
 }; // end commentReducer
 
 const contentReducer = (state = [], action) => {
-    switch (action) {
+    switch (action.type) {
         case "ADD_CONTENT":
             return state;
         default:
@@ -29,16 +29,18 @@ const contentReducer = (state = [], action) => {
 }; // end contentReducer
 
 const feelingReducer = (state = [], action) => {
-    switch (action) {
+    switch (action.type) {
         case "ADD_FEELING":
-            return state;
+            return [...state, action.payload];
+        case "ON_SUBMIT":
+            return [];
         default:
             return state;
     }
 }; // end feelingReducer
 
 const supportReducer = (state = [], action) => {
-    switch (action) {
+    switch (action.type) {
         case "ADD_SUPPORT":
             return state;
         default:

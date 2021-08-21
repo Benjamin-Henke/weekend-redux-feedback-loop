@@ -21,8 +21,7 @@ function FeelingForm() {
             type: "ADD_FEELING",
             payload: feeling
         });
-        // Clear input field
-        setFeeling('');
+
         // Sends user to Content Form component
         history.push('/contentform');
     } // end on click
