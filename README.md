@@ -23,6 +23,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] import 6 components
     [x] set up nav on app.jsx
     [x] <Route> tags for each page
+    [] set up next buttons
 
 [] feeling form
     [] number input field
