@@ -11,10 +11,22 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 # To Do List
 [x] install packages
 [x] create database
-[x] create 5 components
+[x] create 6 components
+    [x] home page
     [x] feeling
     [x] understanding content
     [x] supported
     [x] comments
     [x] review page
 
+[x] navigation
+    [x] import 6 components
+    [x] set up nav on app.jsx
+    [x] <Route> tags for each page
+    [] set up next buttons
+
+[] feeling form
+    [] number input field
+    [] NEXT button
+        [] send info to reducer
+        [] send user to next page (understanding content)
