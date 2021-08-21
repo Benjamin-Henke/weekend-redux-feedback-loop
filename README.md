@@ -25,10 +25,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] <Route> tags for each page
     [x] set up next buttons
 
-[] index.js
+[x] index.js
     [x] create store
     [x] create reducers
-    [] import logger
+    [x] import logger
 
 [] home page
     [] instructions

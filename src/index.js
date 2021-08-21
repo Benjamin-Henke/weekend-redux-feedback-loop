@@ -5,9 +5,46 @@ import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Redux
-import {createStore, combineReducers, applyMiddleWare} from 'redux';
+import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import logger from 'redux-logger';
+
+// Reducers
+const commentReducer = (state = [], action) => {
+    switch (action) {
+        case "ADD_COMMENT":
+            return state;
+        default:
+            return state;
+    }
+}; // end commentReducer
+
+const contentReducer = (state = [], action) => {
+    switch (action) {
+        case "ADD_CONTENT":
+            return state;
+        default:
+            return state;
+    }
+}; // end contentReducer
+
+const feelingReducer = (state = [], action) => {
+    switch (action) {
+        case "ADD_FEELING":
+            return state;
+        default:
+            return state;
+    }
+}; // end feelingReducer
+
+const supportReducer = (state = [], action) => {
+    switch (action) {
+        case "ADD_SUPPORT":
+            return state;
+        default:
+            return state;
+    }
+}; // end supportReducer
 
 // Store
 const storeInstance = createStore(combineReducers({
@@ -17,8 +54,12 @@ const storeInstance = createStore(combineReducers({
     supportReducer,
     commentReducer
 }),
-applyMiddleWare(logger)
+applyMiddleware(logger)
 );
 
-ReactDOM.render(<App store={storeInstance}/>, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={storeInstance}>
+        <App />
+    </Provider>,
+document.getElementById('root'));
 registerServiceWorker();
