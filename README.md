@@ -43,6 +43,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [] review page
     [x] bring in reducers
     [x] display data
-    [] POST req to database
-        [] create survey.router.js to receive POST
+    [x] POST req to database
+        [x] create survey.router.js to receive POST
     [] thank you message to user

@@ -18,23 +18,30 @@ function ReviewForm() {
 
     // Handles click 
     const onClick = () => {
-        // Make server request to store user inputs to database
-        axios({
-            method: "POST",
-            url: "/survey",
-            data: surveyResponse
-        }).then((response) => {
-            // Clears user data
-            dispatch({
-                type: "ON_SUBMIT"
-            })
-        }).catch((error) => {
-            console.log("Failed to POST", error);
-        }); // end axios
+        
 
-        // Sends user to Home Page component
-        history.push('/home')
+        let validation = confirm('Ready to submit?')
+        if (validation == true) {
+            // Make server request to store user inputs to database
+            axios({
+                method: "POST",
+                url: "/survey",
+                data: surveyResponse
+            }).then((response) => {
+                // Clears user data
+                dispatch({
+                    type: "ON_SUBMIT"
+                })
+            }).catch((error) => {
+                console.log("Failed to POST", error);
+            }); // end axios
 
+            // Sends user to Home Page component
+            history.push('/home')
+        } else if (validation == false) {
+            return
+        }
+       
     } // end on click
     return (
         <div id="pageSix">
