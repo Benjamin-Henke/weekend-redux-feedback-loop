@@ -14,12 +14,7 @@ function ReviewForm() {
     const supportForm = useSelector(store => store.supportReducer);
     const commentForm = useSelector(store => store.commentReducer);
 
-    let surveyResponse = {
-        feeling: feelingForm,
-        content: contentForm,
-        support: supportForm,
-        comment: commentForm
-    }
+    let surveyResponse = [...feelingForm, ...contentForm, ...supportForm, ...commentForm];
 
     // Handles click 
     const onClick = () => {
