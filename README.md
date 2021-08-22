@@ -40,6 +40,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] dispatch to reducer
     [x] input validation
 
-[] review
+[] review page
     [x] bring in reducers
     [x] display data
+    [] POST req to database
+    [] thank you message to user

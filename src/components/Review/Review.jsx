@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
@@ -15,13 +16,22 @@ function ReviewForm() {
 
     // Handles click 
     const onClick = () => {
+        // Make server request to store user inputs to database
+        axios({
+            method: "POST",
+            url: "/survey"
+        }).then((response) => {
+            // Clears user data
+            dispatch({
+                type: "ON_SUBMIT"
+            })
+        }).catch((error) => {
+            console.log("Failed to POST", error);
+        }); // end axios
+
         // Sends user to Home Page component
         history.push('/home')
 
-        // Clears user data
-        dispatch({
-            type: "ON_SUBMIT"
-        })
     } // end on click
     return (
         <div id="pageSix">
