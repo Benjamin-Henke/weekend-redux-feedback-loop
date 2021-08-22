@@ -33,6 +33,16 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] home page
     [x] instructions
 
-[] feeling form
-    [] number input field
-    [] dispatch to reducer
+[x] forms 
+    [x] number input field
+    [x] add state variable
+    [x] handle input change from user
+    [x] dispatch to reducer
+    [x] input validation
+
+[] review page
+    [x] bring in reducers
+    [x] display data
+    [x] POST req to database
+        [x] create survey.router.js to receive POST
+    [] thank you message to user
