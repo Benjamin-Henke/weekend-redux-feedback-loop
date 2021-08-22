@@ -14,12 +14,20 @@ function ReviewForm() {
     const supportForm = useSelector(store => store.supportReducer);
     const commentForm = useSelector(store => store.commentReducer);
 
+    let surveyResponse = {
+        feeling: feelingForm,
+        content: contentForm,
+        support: supportForm,
+        comment: commentForm
+    }
+
     // Handles click 
     const onClick = () => {
         // Make server request to store user inputs to database
         axios({
             method: "POST",
-            url: "/survey"
+            url: "/survey",
+            data: surveyResponse
         }).then((response) => {
             // Clears user data
             dispatch({
